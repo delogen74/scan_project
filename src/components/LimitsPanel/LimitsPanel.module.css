@@ -1,0 +1,9 @@
+.limits {
+    font-size: 14px;
+    color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

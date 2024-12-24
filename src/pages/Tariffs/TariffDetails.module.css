@@ -1,0 +1,66 @@
+.tariffDetails {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.oldPrice {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: line-through;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.additionalInfo {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.featureItem {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.notFound {
+    text-align: center;
+    padding: 40px;
+}

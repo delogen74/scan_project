@@ -1,0 +1,201 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.authFormContainer {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.keysImage {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: auto;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+    outline: none;
+    color: #555555;
+}
+
+.tab.active {
+    border-bottom: 3px solid #5970FF;
+    color: #5970FF;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #333333;
+}
+
+.input {
+    padding: 12px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+.submitButton {
+    padding: 15px;
+    background-color: #5970FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+    background-color: #4758d6;
+}
+
+.disabled {
+    background-color: #a0c4ff;
+    cursor: not-allowed;
+}
+
+.restorePassword {
+    text-align: center;
+    color: #5970FF;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #999999;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.socialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialButton {
+    width: 50px;
+    height: 50px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.socialButton:hover {
+    background-color: #e0e0e0;
+}
+
+.socialButton img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Адаптивность */
+@media (max-width: 650px) {
+    .authFormContainer {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .tab {
+        font-size: 18px;
+    }
+
+    .submitButton {
+        font-size: 18px;
+    }
+
+    .divider {
+        font-size: 16px;
+    }
+
+    .socialButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .socialButton img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .keysImage {
+        width: 150px;
+    }
+}

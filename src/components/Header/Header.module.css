@@ -1,0 +1,143 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.left {
+    flex: 1;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navLink {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navLink:hover {
+    color: #007bff;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.registerButton {
+    background: none;
+    border: none;
+    color: #93ccca;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.registerButton:hover {
+    text-decoration: underline;
+}
+
+.loginButton {
+    background-color: #91e1e0;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.loginButton:hover {
+    background-color: #7fd4d3;
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: #93ccca;
+    margin: 0 10px;
+}
+
+.userPanel {
+    display: flex;
+    align-items: center;
+}
+
+.limits {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.username {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.logoutButton {
+    background-color: #91e1e0;
+    color: #000;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logoutButton:hover {
+    background-color: #7fd4d3;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .center {
+        display: none;
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+
+    .registerButton,
+    .loginButton {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .limits {
+        display: none;
+    }
+}

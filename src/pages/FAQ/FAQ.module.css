@@ -1,0 +1,25 @@
+.faqContainer {
+    padding: 60px;
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.faqItem {
+    margin-bottom: 30px;
+}
+
+.faqItem h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #5970FF;
+}
+
+.faqItem p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #333;
+}

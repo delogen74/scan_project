@@ -1,0 +1,100 @@
+.resultsContainer {
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #666;
+}
+
+.resultImage {
+    width: 150px;
+    height: auto;
+}
+
+.summary {
+    margin-bottom: 20px;
+}
+
+.summary h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.documents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card .link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card .link:hover {
+    text-decoration: underline;
+}
+
+.card .wordCount {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.loadMoreButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7ce3e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

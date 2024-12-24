@@ -1,0 +1,22 @@
+.tariffsPage {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
